@@ -6,6 +6,7 @@ import { NavBar } from 'boot-cell/source/Navigator/NavBar';
 import { history } from '../model';
 import { HomePage } from './Home';
 import { HospitalPage } from './Hospital';
+import { HospitalEdit } from './Hospital/Edit';
 import { LogisticsPage } from './Logistics';
 import { getMenu } from './menu';
 
@@ -19,6 +20,7 @@ export class PageRouter extends HTMLRouter {
     protected routes = [
         { paths: [''], component: HomePage },
         { paths: ['hospital'], component: HospitalPage },
+        { paths: ['hospital/edit'], component: HospitalEdit },
         { paths: ['logistics'], component: LogisticsPage }
     ];
 
