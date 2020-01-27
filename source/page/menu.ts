@@ -1,3 +1,8 @@
+export enum RouteRoot {
+    Hospital = 'hospital',
+    Logistics = 'logistics'
+}
+
 export default [
     {
         title: '首页',
@@ -5,12 +10,12 @@ export default [
     },
     {
         title: '医院',
-        href: 'hospital',
+        href: RouteRoot.Hospital,
         icon: 'hospital'
     },
     {
         title: '物流',
-        href: 'logistics',
+        href: RouteRoot.Logistics,
         icon: 'shipping-fast'
     },
     {
